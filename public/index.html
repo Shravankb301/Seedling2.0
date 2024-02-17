@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Growth Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Career Growth Hub</h1>
+  </header>
+
+  <section class="main-section">
+    <div class="headline">Unlock Your Career Potential</div>
+    <div class="sub-headline">Tell us your aspirations, and we'll guide you to success!</div>
+
+    <!-- Features Section -->
+    <div class="features">
+      <div class="feature">
+        <img src="cash-icon.png" alt="Cash Icon" width="150">
+        <p>Make $150k 💵<br>Unlock the path to a six-figure income. Your financial goals, achieved.</p>
+      </div>
+      <div class="feature">
+        <img src="negotiation-icon.png" alt="Negotiation Icon" width="150" >
+        <p>Earn what I’m worth 💪<br>Don't settle for less. Learn how to negotiate and claim your true value.</p>
+      </div>
+      <!-- Add similar features for other items -->
+    </div>
+
+    <div class="intro-text">
+      <p>We've curated the top recruiters in KC - select the one that aligns with your career goals.</p>
+      <p>Don't waste 30% of your life. Discover fulfilling work that drives your passion.</p>
+      <p>Embark on a journey to career success. We're here to support you every step of the way.</p>
+    </div>
+
+    <form action="/submit" method="POST" class="form-container" id="myForm">
+      <!-- Textbox Input -->
+      <div class="textarea-container">
+        <textarea name="textareaData1" id="textareaData1" rows="6" placeholder="Share your career aspirations or challenges (300 characters limit)"></textarea>
+        <span id="descriptionError" class="error-message"></span>
+      </div>
+      <!-- Textbox Input 2 -->
+      <div class="textarea-container">
+        <textarea name="textareaData2" id="textareaData2" rows="6" class="small-textarea" placeholder="Enter your email address"></textarea>
+        <span id="emailError" class="error-message"></span>
+      </div>
+      <br>
+      <div>
+        <!-- Call-to-Action Button -->
+        <button type="submit" class="call-to-action-btn">Get Started for Free</button>
+      </div>  
+    </form>
+
+  </section>
+
+  <script src="./validation.js" type="text/javascript"></script>
+
+</body>
+</html>
